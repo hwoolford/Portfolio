@@ -1,0 +1,32 @@
+.footer {
+    background-color: #219ebc;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top: solid white 5px; */
+  }
+  
+  .socialLogo {
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .socialContainer {
+    position: relative; /* Ensure the parent container is positioned */
+    display: inline-block; /* Ensure the container wraps around the images */
+  }
+  
+  .socialLogo.hover {
+    display: none; /* Hide the second image by default */
+  }
+  
+  .socialContainer:hover .socialLogo.normal {
+    display: none; /* Hide the first image when hovering over the container */
+  }
+  
+  .socialContainer:hover .socialLogo.hover {
+    display: block; /* Display the second image when hovering over the container */
+  }
+  
