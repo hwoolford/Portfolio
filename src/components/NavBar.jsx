@@ -15,7 +15,7 @@ export default function NavBar() {
         </div>
         <ul className={menuOpen ? 'open' : ''}>
             <li>
-                <NavLink to='/about'>About</NavLink>
+                <NavLink to='/about'>About Me</NavLink>
             </li>
             <li>
                 <NavLink to='/projects'>Projects</NavLink>
