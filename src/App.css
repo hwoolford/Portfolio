@@ -7,6 +7,16 @@
 }
 
 .main-content {
-  background-color: #d8dbe2;
+  /* background-color: #d8dbe2; */
+  background-color: #181818;
   flex: 1;
+}
+
+h1 {
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 30px;
+  font-size: 3.5rem;
+  color: white;
 }

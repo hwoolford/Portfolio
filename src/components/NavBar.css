@@ -1,5 +1,7 @@
 .active {
-  background-color: aqua;
+  background-color: #219ebc;
+  color: #181818;
+  font-weight: bolder;
 }
 
 nav {
