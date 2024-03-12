@@ -20,7 +20,7 @@
 }
 
 form .inputBox {
-    color: white;
+  color: white;
 }
 
 .inputBox::placeholder {
@@ -29,9 +29,9 @@ form .inputBox {
 }
 
 .inputBox:focus {
-    background: transparent;
-    border-color: #ef0d8d;
-    color: white;
+  background: transparent;
+  border-color: #ef0d8d;
+  color: white;
 }
 
 .form .inlineInput {

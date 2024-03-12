@@ -6,7 +6,7 @@
 }
 
 .imgContainer {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .portrait {
@@ -17,7 +17,7 @@
 }
 
 .textContainer {
-   margin-left: 10rem;
+  margin-left: 10rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
@@ -44,9 +44,9 @@
 }
 
 .btnContainer {
-   display: flex;
-    width: 75%;
-    justify-content: center;
+  display: flex;
+  width: 75%;
+  justify-content: center;
 }
 
 .btn {
@@ -58,10 +58,10 @@
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-size: 2.25rem;
-  background-color: #ef0d8d; 
+  background-color: #ef0d8d;
 }
 
 .btn:hover {
-    background-color: #219ebc;
-    color: black;
+  background-color: #219ebc;
+  color: black;
 }

@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { validateEmail } from "../utils/validateEmail";
 
-import "../pages/Contact.css"
-
+import "../pages/Contact.css";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState({}); 
+  const [errors, setErrors] = useState({});
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -24,14 +23,14 @@ export default function Contact() {
   const handleBlur = (e) => {
     const { name, value } = e.target;
     if (!value.trim()) {
-      setErrors(prevErrors => ({
+      setErrors((prevErrors) => ({
         ...prevErrors,
-        [name]: "Field is required"
+        [name]: "Field is required",
       }));
     } else {
-      setErrors(prevErrors => ({
+      setErrors((prevErrors) => ({
         ...prevErrors,
-        [name]: ""
+        [name]: "",
       }));
     }
   };
@@ -49,9 +48,9 @@ export default function Contact() {
     }
 
     if (!validateEmail(email)) {
-      setErrors(prevErrors => ({
+      setErrors((prevErrors) => ({
         ...prevErrors,
-        email: "Please enter a valid email address"
+        email: "Please enter a valid email address",
       }));
       return;
     }
@@ -67,7 +66,6 @@ export default function Contact() {
       <h1 className="text-center title">Contact Me</h1>
       <form className="row g-3 form" onSubmit={handleFormSubmit}>
         <div className="col-md-6">
-          {/* <label className="form-label label">Enter your name:</label> */}
           <input
             className="inlineInput form-control inputBox"
             name="name"
@@ -80,7 +78,6 @@ export default function Contact() {
           {errors.name && <p className="error-text">{errors.name}</p>}
         </div>
         <div className="col-md-6">
-          {/* <label className="form-label label">Enter your email:</label> */}
           <input
             className="inlineInput form-control inputBox"
             name="email"
@@ -93,7 +90,6 @@ export default function Contact() {
           {errors.email && <p className="error-text">{errors.email}</p>}
         </div>
         <div className="col-md-12">
-          {/* <label className="form-label label">Enter your message:</label> */}
           <textarea
             className="blockInput form-control inputBox"
             name="message"
