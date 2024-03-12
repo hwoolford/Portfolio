@@ -1,0 +1,67 @@
+.home {
+  /* height: calc(100vh - 12rem); */
+  /* width: 100vw; */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.imgContainer {
+    padding-right: 2rem;
+}
+
+.portrait {
+  object-fit: cover;
+  /* height: 87.9vh; */
+  height: 76.3rem;
+  /* padding-right: 10rem; */
+}
+
+.textContainer {
+   margin-left: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  font-size: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+}
+
+.hello {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.homeName {
+  color: #219ebc;
+  font-weight: 900;
+}
+
+.homeintro {
+  font-weight: 100;
+  font-size: 1.75rem;
+}
+
+.btnContainer {
+   display: flex;
+    width: 75%;
+    justify-content: center;
+}
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-size: 2.25rem;
+  background-color: #ef0d8d; 
+}
+
+.btn:hover {
+    background-color: #219ebc;
+    color: black;
+}

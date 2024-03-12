@@ -1,5 +1,5 @@
 .active {
-  background-color: #219ebc;
+  background-color: #ef0d8d;
   color: #181818;
   font-weight: bolder;
 }
@@ -20,7 +20,7 @@ nav .title {
   font-size: 3.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: #219ebc;
   font-family: "Francois One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -50,8 +50,8 @@ nav ul li a {
 
 /* apply this styling if the element is not in the active class (it's not the active page) */
 nav ul li a:not(.active):hover {
-  /* background-color: red; */
-  color: #219ebc;
+  /* background-color: #ef0d8d; */
+  color: #ef0d8d;
 }
 
 nav .menu {

@@ -4,7 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border-top: solid white 5px; */
+    border-top: solid white 5px;
+    position: sticky;
+    bottom: 0;
   }
   
   .socialLogo {
