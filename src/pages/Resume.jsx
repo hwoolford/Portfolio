@@ -1,4 +1,4 @@
-import Download from "../components/Download/Download.jsx";
+import Download from "../components/Download"
 import "../pages/Resume.css";
 
 export default function Resume() {

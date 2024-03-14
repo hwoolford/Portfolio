@@ -1,4 +1,4 @@
-import "../Footer/Footer.css";
+import "../components/Footer.css";
 import githublogo from "../../assets/githublogo.png";
 import githublogowhite from "../../assets/githublogowhite.png";
 import linkedinlogo from "../../assets/linkedinlogo.png";

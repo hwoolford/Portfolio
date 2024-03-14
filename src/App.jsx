@@ -2,8 +2,8 @@ import './App.css'
 
 import { Outlet } from "react-router-dom";
 
-import NavBar from './components/NavBar/NavBar.jsx'
-import Footer from './components/Footer/Footer.jsx';
+import NavBar from './components/NavBar.jsx'
+import Footer from './components/Footer.jsx';
 
 
 
