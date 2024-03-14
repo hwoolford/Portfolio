@@ -14,6 +14,7 @@
   
   ul {
     list-style-type: none;
+    justify-content: center;
   }
   
   li {
@@ -32,7 +33,31 @@
     width: 30rem;
     background-color: #1f1f1f;
     padding-top: 20px;
-    margin: auto 50px;
+    margin: 10px 50px;
   }
-  
+
+  @media screen and (max-width: 1120px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+    li {
+      font-size: 1.5rem;
+    }
+    .frontend, .backend {
+      width: 20rem;
+    }
+  }
+
+  @media screen and (max-width: 785px) {
+    .skills {
+      flex-wrap: wrap; 
+      justify-content: center;
+    }
+    .heading {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem
+
+    }
+  }
   
