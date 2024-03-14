@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="home">
-        <div className="main d-flex flex-row justify-content-center align-items-center">
+        <div className="main d-flex flex-row justify-content-space-around align-items-center">
           <div className="textContainer">
             <span className="hello">Hello,</span>
             <br />
@@ -18,7 +18,7 @@ export default function Home() {
               Drawing from my background as an educator, I combine
               communication, problem-solving, and collaboration skills to create
               innovative web solutions, driven by a commitment to detail and
-              ongoing learning.
+              a passion for learning.
             </p>
             <div className="btnContainer">
               <a className="btn work" href="./Projects">

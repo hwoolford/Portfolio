@@ -1,5 +1,5 @@
-import "../components/Download.css";
-import resume from "../../assets/resume2024 copy.pdf";
+import "../Download/Download.css";
+import resume from '../../assets/resume2024.pdf'
 
 export default function Download() {
   return (
