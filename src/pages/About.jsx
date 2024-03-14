@@ -1,15 +1,15 @@
 import "../pages/About.css"
-import Portrait from "../../assets/portraitblue.png"
+import Portrait from "../../assets/portraitoutline.png"
 
 export default function About() {
     return (
         <>
       <div className="body container">
         <h1 className="text-center title">About Me</h1>
-        <div className="main d-flex flex-row justify-content-between align-items-center">
+        <div className="main d-flex flex-row align-items-center">
           <div className="imageContainer">
             <img
-              className="portrait"
+              className="portraitBlue"
               src={Portrait}
               alt="portrait"
             />

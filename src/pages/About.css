@@ -3,8 +3,16 @@
     margin-right: auto;
 }
 
-.portrait {
+.main {
+  justify-content: space-between;
+}
+
+.portraitBlue {
    max-height: 40rem;
+}
+
+.imageContainer {
+  padding-right: 5em;
 }
 
 .about {
@@ -14,10 +22,25 @@
     font-family: "Quicksand", sans-serif;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1200px) {
     .about {
      font-size: 1.25rem;
     }
+    .portraitBlue {
+      max-height: 35rem;
+    }
+ }
+
+ @media screen and (max-width: 1000px) {
+  .about {
+    font-size: 1rem;
+   }
+   .portraitBlue {
+     max-height: 30rem;
+   }
+   .title {
+    font-size: 4rem;
+   }
  }
 
  @media screen and (max-width: 770px) {
@@ -29,9 +52,9 @@
     .imageContainer {
       width: 100%; 
       margin-bottom: 20px; 
-      
+      padding: 1rem;
     }
-  
+
     .AboutContainer {
       width: 100%;
     }
