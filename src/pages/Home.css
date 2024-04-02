@@ -1,6 +1,6 @@
 .home {
-  height: calc(100vh - 12rem); 
-  width: 100vw; 
+  /* height: calc(100vh - 12rem); */
+  /* width: 100vw; */
   margin: 0 auto;
   overflow: hidden;
 }
@@ -12,10 +12,8 @@
 .portrait {
   object-fit: cover;
   /* height: 87.9vh; */
-  height: 50rem;
+  height: 76.3rem;
   /* padding-right: 10rem; */
-  position: fixed;
-  bottom: 0;
 }
 
 .textContainer {
@@ -23,7 +21,7 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   flex-direction: column;
   justify-content: center;
   font-weight: 500;
@@ -31,7 +29,7 @@
 }
 
 .hello {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bolder;
 }
 
@@ -42,12 +40,12 @@
 
 .homeintro {
   font-weight: 100;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .btnContainer {
   display: flex;
-  width: 100%;
+  width: 75%;
   justify-content: center;
 }
 
