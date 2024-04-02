@@ -41,12 +41,12 @@
 
 .btnContainer {
   display: flex;
-  width: 75%;
+  /* width: 75%; */
   justify-content: center;
 }
 
 .btn {
-  width: 10rem;
+  width: 15rem;
   height: 4rem;
   margin: 20px auto;
   border-radius: 10px;
