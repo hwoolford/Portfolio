@@ -1,6 +1,6 @@
 .home {
-  /* height: calc(100vh - 12rem); 
-  width: 100vw;  */
+  height: calc(100vh - 12rem); 
+  width: 100vw; 
   margin: 0 auto;
   overflow: hidden;
 }
@@ -16,7 +16,7 @@
 
 .portrait {
   object-fit: cover;
-  height: calc(100vh - 76.3rem); /* This will calculate the height to fit the remaining space between the viewport height and the height of the footer */
+  height: calc(100vh - 23.7rem); /* This will calculate the height to fit the remaining space between the viewport height and the height of the footer */
   width: 100%; /* Ensures the image covers the entire width of its container */
   position: fixed; /* Affixes the image in a fixed position */
   bottom: 0; /* Places the image at the bottom of the viewport */
