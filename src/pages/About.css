@@ -8,7 +8,7 @@
 }
 
 .portraitBlue {
-   max-height: 40rem;
+   max-height: 35rem;
 }
 
 .imageContainer {
@@ -16,7 +16,7 @@
 }
 
 .about {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: white;
     font-family: "Quicksand", sans-serif;
