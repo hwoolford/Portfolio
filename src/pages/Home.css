@@ -9,11 +9,19 @@
   padding-right: 2rem;
 }
 
+/* .portrait {
+  object-fit: cover;
+  height: 76.3rem;
+} */
+
 .portrait {
   object-fit: cover;
-  /* height: 87.9vh; */
-  height: 76.3rem;
-  /* padding-right: 10rem; */
+  height: calc(100vh - 76.3rem); /* This will calculate the height to fit the remaining space between the viewport height and the height of the footer */
+  width: 100%; /* Ensures the image covers the entire width of its container */
+  position: fixed; /* Affixes the image in a fixed position */
+  bottom: 0; /* Places the image at the bottom of the viewport */
+  left: 0; /* Aligns the image to the left edge of the viewport */
+  z-index: -1; /* Moves the image behind other content */
 }
 
 .textContainer {
