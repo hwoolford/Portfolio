@@ -1,6 +1,4 @@
 .home {
-  /* height: calc(100vh - 12rem); 
-  width: 100vw;  */
   margin: 0 auto;
   overflow: hidden;
 }
@@ -11,11 +9,7 @@
 
 .portrait {
   object-fit: cover;
-  height: 76.3rem;
-  /* height: calc(100vh - 76.3rem);  */
-  /* position: fixed; 
-  bottom: 0;
-  right: 0; */
+  height: 50%;
 }
 
 .textContainer {
