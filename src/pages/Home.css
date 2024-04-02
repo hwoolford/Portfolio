@@ -9,7 +9,7 @@
 
 .portrait {
   object-fit: cover;
-  height: 60rem;
+  height: 55rem;
 }
 
 .textContainer {
@@ -41,7 +41,7 @@
 
 .btnContainer {
   display: flex;
-  /* width: 75%; */
+  width: 80%;
   justify-content: center;
 }
 
