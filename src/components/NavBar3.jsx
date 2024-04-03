@@ -1,5 +1,7 @@
+import './NavBar3.css'
+
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -45,6 +47,8 @@ export default function NavBar3() {
             noWrap
             component={Link}
             to="/"
+            exact
+            className="link"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -88,9 +92,9 @@ export default function NavBar3() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                  <Link to={page.path} style={{ textDecoration: "none" }}>
+                  <NavLink to={page.path} className="nav-link">
                     <Typography textAlign="center">{page.title}</Typography>
-                  </Link>
+                    </NavLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -100,6 +104,8 @@ export default function NavBar3() {
             noWrap
             component={Link}
             to="/"
+            exact
+            className="link"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -116,12 +122,13 @@ export default function NavBar3() {
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                className="nav-btn"
+                className="nav-link"
                 key={page.title}
-                component={Link}
+                component={NavLink}
                 to={page.path}
+                activeClassName="active"
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, mx: .25, color: "white", display: "block" }}
               >
                 {page.title}
               </Button>
