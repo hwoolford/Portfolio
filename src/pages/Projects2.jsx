@@ -68,9 +68,10 @@ const ButtonLink = styled("a")(({ color }) => ({
     color: "#fff",
     textDecoration: "none",
     textTransform: "uppercase",
+    textAlign: "center",
     fontFamily: "Francois One",
     fontStyle: "normal",
-    fontSize: "1.75rem",
+    fontSize: "1.5rem",
     fontWeight: "bold",
     borderRadius: "10px",
     transition: "background-color 0.3s",
@@ -114,7 +115,7 @@ export default function Projects() {
         <Grid item className="project-container">
           <CustomCard
             color={"#c75a46"}
-            title={"Corporate Project Management System"}
+            title={"Corporate Project Hub"}
             subtitle={
               "MongoDB, Express.js, React, Node.js, MaterialUI, JSON Web Token, bcrypt, dayJS"
             }
