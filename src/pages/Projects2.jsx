@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import {
-//   Button,
   Card,
   CardActionArea,
   CardActions,
@@ -62,23 +61,23 @@ const TypographySubtitle = styled(Typography)(() => ({
 }));
 
 const ButtonLink = styled("a")(({ color }) => ({
-    display: "inline-block",
-    backgroundColor: color,
-    padding: "0.5rem",
-    color: "#fff",
-    textDecoration: "none",
-    textTransform: "uppercase",
-    textAlign: "center",
-    fontFamily: "Francois One",
-    fontStyle: "normal",
-    fontSize: "1.5rem",
-    fontWeight: "bold",
-    borderRadius: "10px",
-    transition: "background-color 0.3s",
-    "&:hover": {
-       border: "white solid 2px",
-    },
-  }));
+  display: "inline-block",
+  backgroundColor: color,
+  padding: "0.5rem",
+  color: "#fff",
+  textDecoration: "none",
+  textTransform: "uppercase",
+  textAlign: "center",
+  fontFamily: "Francois One",
+  fontStyle: "normal",
+  fontSize: "1.5rem",
+  fontWeight: "bold",
+  borderRadius: "10px",
+  transition: "background-color 0.3s",
+  "&:hover": {
+    border: "white solid 2px",
+  },
+}));
 
 const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
   <CardActionAreaActionArea>
@@ -100,7 +99,7 @@ const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
       </CardContentContent>
     </StyledCard>
     <CardActions>
-    <ButtonLink href={repo} target="_blank" rel="noreferrer" color={color}>
+      <ButtonLink href={repo} target="_blank" rel="noreferrer" color={color}>
         GitHub
       </ButtonLink>
     </CardActions>
@@ -115,9 +114,9 @@ export default function Projects() {
         <Grid item className="project-container">
           <CustomCard
             color={"#c75a46"}
-            title={"Corporate Project Hub"}
+            title={"Corporate Project Management System"}
             subtitle={
-              "MongoDB, Express.js, React, Node.js, MaterialUI, JSON Web Token, bcrypt, dayJS"
+              "MongoDB, Express.js, React, Node.js, MaterialUI, JSON Web Token, bcrypt, DayJS"
             }
             image={cpms}
             deploy={"https://final-project-qomg.onrender.com/"}
@@ -129,7 +128,7 @@ export default function Projects() {
             color={"#5e877f"}
             title={"Wet My Plants"}
             subtitle={
-              "Perenual API, node.js, express.js, bcrypt, mysql2, sequelize, express-handlebars"
+              "Perenual API, Node.js, Express.js, bcrypt, mySQL2, Sequelize, Handlebars"
             }
             image={wetmyplants}
             deploy={"https://thawing-dawn-01968-1886d8c04121.herokuapp.com/"}
@@ -188,3 +187,12 @@ export default function Projects() {
     </div>
   );
 }
+
+CustomCard.propTypes = {
+  color: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  deploy: PropTypes.string.isRequired,
+  repo: PropTypes.string.isRequired,
+};
