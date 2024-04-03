@@ -70,9 +70,9 @@ const ButtonLink = styled("a")(({ color }) => ({
   textAlign: "center",
   fontFamily: "Francois One",
   fontStyle: "normal",
-  fontSize: "1.5rem",
-  fontWeight: "bold",
-  borderRadius: "10px",
+  fontSize: "1.65rem",
+  width: "33%",
+  borderRadius: 8,
   transition: "background-color 0.3s",
   "&:hover": {
     border: "white solid 2px",
@@ -99,9 +99,14 @@ const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
       </CardContentContent>
     </StyledCard>
     <CardActions>
-      <ButtonLink href={repo} target="_blank" rel="noreferrer" color={color}>
-        GitHub
+        <div className="btn-container">
+    <ButtonLink href={deploy} target="_blank" rel="noreferrer" color={color}>
+        View Site
       </ButtonLink>
+      <ButtonLink href={repo} target="_blank" rel="noreferrer" color={color}>
+        View Repo
+      </ButtonLink>
+      </div>
     </CardActions>
   </CardActionAreaActionArea>
 );

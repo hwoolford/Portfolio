@@ -1,6 +1,6 @@
-/* .main-container {
-    margin: 0 15rem;
-} */
+.main-container {
+    position: relative;
+}
 
 .grid-container {
     display: flex;
@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.button-container {
+.btn-container {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
