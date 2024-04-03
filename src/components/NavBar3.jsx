@@ -36,8 +36,9 @@ export default function NavBar3() {
       position="static"
       sx={{
         backgroundColor: "#1f1f1f",
-        height: "5rem",
+        height: "6rem",
         justifyContent: "center",
+        borderBottom: "solid #219ebc 3px",
       }}
     >
       <Container maxWidth="xl">
@@ -54,8 +55,9 @@ export default function NavBar3() {
               display: { xs: "none", md: "flex" },
               fontFamily: "Francois One",
               fontWeight: 400,
+              letterSpacing: '.3rem',
               fontSize: "3.5rem",
-              color: "#219ebc",
+              color: "#fff",
               textDecoration: "none",
             }}
           >
@@ -112,8 +114,9 @@ export default function NavBar3() {
               flexGrow: 1,
               fontFamily: "Francois One",
               fontWeight: 400,
+              letterSpacing: '.3rem',
               fontSize: "3.5rem",
-              color: "#219ebc",
+              color: "#fff",
               textDecoration: "none",
             }}
           >
