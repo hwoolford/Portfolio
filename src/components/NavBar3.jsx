@@ -36,7 +36,7 @@ export default function NavBar3() {
       position="static"
       sx={{
         backgroundColor: "#1f1f1f",
-        height: "7rem",
+        height: "5rem",
         justifyContent: "center",
       }}
     >
