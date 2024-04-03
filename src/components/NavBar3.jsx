@@ -55,7 +55,7 @@ export default function NavBar3() {
               fontFamily: "Francois One",
               fontWeight: 400,
               letterSpacing: '.3rem',
-              fontSize: "3.5rem",
+              fontSize: "4rem",
               color: "#219ebc",
               textDecoration: "none",
             }}
