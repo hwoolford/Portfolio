@@ -38,7 +38,6 @@ export default function NavBar3() {
         backgroundColor: "#1f1f1f",
         height: "6rem",
         justifyContent: "center",
-        borderBottom: "solid #219ebc 3px",
       }}
     >
       <Container maxWidth="xl">
@@ -57,7 +56,7 @@ export default function NavBar3() {
               fontWeight: 400,
               letterSpacing: '.3rem',
               fontSize: "3.5rem",
-              color: "#fff",
+              color: "#219ebc",
               textDecoration: "none",
             }}
           >
@@ -116,7 +115,7 @@ export default function NavBar3() {
               fontWeight: 400,
               letterSpacing: '.3rem',
               fontSize: "3.5rem",
-              color: "#fff",
+              color: "#219ebc",
               textDecoration: "none",
             }}
           >
