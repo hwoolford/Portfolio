@@ -1,6 +1,6 @@
-.main-container {
+/* .main-container {
     margin: 0 15rem;
-}
+} */
 
 .grid-container {
     display: flex;
@@ -8,7 +8,7 @@
 }
 
 .project-container {
-    width: 35rem;
+    width: 40rem;
     padding-bottom: 1rem;
 }
 
