@@ -53,6 +53,7 @@ export default function NavBar3() {
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "Francois One",
+            //   fontFamily: "Codystar",
               fontWeight: 400,
               letterSpacing: '.2rem',
               fontSize: "4rem",

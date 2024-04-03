@@ -5,8 +5,16 @@
 
 .link {
     text-shadow: 
-    -2px -2px 0 #219ebc,  
+    /* -1px -1px 0 #219ebc,  
+     1px -1px 0 #219ebc,
+    -1px  1px 0 #219ebc,
+     1px  1px 0 #219ebc; */
+     -2px -2px 0 #219ebc,  
      2px -2px 0 #219ebc,
     -2px  2px 0 #219ebc,
      2px  2px 0 #219ebc;
+     /* -2px -2px 0 #ef0d8d,  
+     2px -2px 0 #ef0d8d,
+    -2px  2px 0 #ef0d8d,
+     2px  2px 0 #ef0d8d; */
 }
