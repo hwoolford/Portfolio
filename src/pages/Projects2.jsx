@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import {
-  Button,
+//   Button,
   Card,
   CardActionArea,
   CardActions,
@@ -61,17 +61,23 @@ const TypographySubtitle = styled(Typography)(() => ({
   textAlign: "center",
 }));
 
-const StyledButton = styled(Button)(() => ({
-  backgroundColor: "#ef0d8d",
-  height: "2.5rem",
-  color: "black",
-  fontSize: "1.75rem",
-  fontFamily: "Bebas Neue",
-  fontStyle: "normal",
-  "&:hover": {
-    backgroundColor: "#219ebc",
-  },
-}));
+const ButtonLink = styled("a")(({ color }) => ({
+    display: "inline-block",
+    backgroundColor: color,
+    padding: "0.5rem",
+    color: "#fff",
+    textDecoration: "none",
+    textTransform: "uppercase",
+    fontFamily: "Francois One",
+    fontStyle: "normal",
+    fontSize: "1.75rem",
+    fontWeight: "bold",
+    borderRadius: "10px",
+    transition: "background-color 0.3s",
+    "&:hover": {
+       border: "white solid 2px",
+    },
+  }));
 
 const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
   <CardActionAreaActionArea>
@@ -93,9 +99,9 @@ const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
       </CardContentContent>
     </StyledCard>
     <CardActions>
-      <a href={repo} target="_blank" rel="noreferrer">
-        <StyledButton>GitHub Repo</StyledButton>
-      </a>
+    <ButtonLink href={repo} target="_blank" rel="noreferrer" color={color}>
+        GitHub
+      </ButtonLink>
     </CardActions>
   </CardActionAreaActionArea>
 );
