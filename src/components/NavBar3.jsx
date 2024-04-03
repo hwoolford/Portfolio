@@ -34,6 +34,8 @@ export default function NavBar3() {
       position="static"
       sx={{
         backgroundColor: "#1f1f1f",
+        height: "7rem",
+        justifyContent: "center",
       }}
     >
       <Container maxWidth="xl">
@@ -111,9 +113,10 @@ export default function NavBar3() {
           >
             HEATHER WOOLFORD
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
+                className="nav-btn"
                 key={page.title}
                 component={Link}
                 to={page.path}
