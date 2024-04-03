@@ -82,7 +82,6 @@ const ButtonLink = styled("a")(({ color }) => ({
 const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
   <CardActionAreaActionArea>
     <StyledCard color={color}>
-      <a href={deploy} target="_blank" rel="noreferrer">
         <CardMedia
           image={image}
           sx={{
@@ -92,7 +91,6 @@ const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
             backgroundColor: "rgba(0,0,0,0.08)",
           }}
         />
-      </a>
       <CardContentContent color={color}>
         <TypographyTitle variant={"h2"}>{title}</TypographyTitle>
         <TypographySubtitle>{subtitle}</TypographySubtitle>
