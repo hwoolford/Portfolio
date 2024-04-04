@@ -36,11 +36,17 @@
   font-size: 1.5rem;
 }
 
+.buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 .btnContainer {
   display: flex;
-  width: 100%;
-  /* justify-content: center; */
+  width: 80%;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .btn {

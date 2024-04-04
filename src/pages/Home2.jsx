@@ -28,6 +28,7 @@ export default function FullWidthGrid() {
               innovative web solutions, driven by a commitment to detail and
               a passion for learning.
             </p>
+            <div className="buttons">
             <div className="btnContainer">
               <a className="btn work" href="./Projects">
                 View My Work
@@ -35,6 +36,7 @@ export default function FullWidthGrid() {
               <a className="btn contact" href="./Contact">
                 Contact Me
               </a>
+            </div>
             </div>
         </Grid>
         <Grid item xs={12} md={6}
