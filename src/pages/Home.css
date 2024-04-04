@@ -8,11 +8,8 @@
   align-items: start;
 }
 
-
 .textContainer {
-  padding-left: 10rem !important;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 5rem !important;
   color: white;
   font-size: 3rem;
   flex-direction: column;
@@ -66,10 +63,9 @@
 
 /* @media screen and (max-width: 1610px) {
   .button {
-    width: 10rem;
+    width: 15rem;
     font-size: 2rem;
   }
 } */
-
 
 /* style={{ minHeight: "calc(100vh - 8rem)" }} // Set min-height to take up remaining space above the footer */
