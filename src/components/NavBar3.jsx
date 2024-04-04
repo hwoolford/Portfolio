@@ -1,4 +1,4 @@
-import './NavBar3.css'
+import "./NavBar3.css";
 
 import * as React from "react";
 import { Link, NavLink } from "react-router-dom";
@@ -47,15 +47,15 @@ export default function NavBar3() {
             noWrap
             component={Link}
             to="/"
-            exact
+            exact="true"
             className="link"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "Francois One",
-            //   fontFamily: "Codystar",
+              //   fontFamily: "Codystar",
               fontWeight: 400,
-              letterSpacing: '.2rem',
+              letterSpacing: ".2rem",
               fontSize: "4rem",
               color: "#fff",
               textDecoration: "none",
@@ -96,7 +96,7 @@ export default function NavBar3() {
                 <MenuItem key={page.title} onClick={handleCloseNavMenu}>
                   <NavLink to={page.path} className="nav-link">
                     <Typography textAlign="center">{page.title}</Typography>
-                    </NavLink>
+                  </NavLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -106,7 +106,7 @@ export default function NavBar3() {
             noWrap
             component={Link}
             to="/"
-            exact
+            exact="true"
             className="link"
             sx={{
               mr: 2,
@@ -114,7 +114,7 @@ export default function NavBar3() {
               flexGrow: 1,
               fontFamily: "Francois One",
               fontWeight: 400,
-              letterSpacing: '.2rem',
+              letterSpacing: ".2rem",
               color: "#fff",
               textDecoration: "none",
             }}
@@ -123,17 +123,15 @@ export default function NavBar3() {
           </Typography>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                className="nav-link"
-                key={page.title}
-                component={NavLink}
-                to={page.path}
-                activeClassName="active"
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, mx: .25, color: "white", display: "block" }}
-              >
-                {page.title}
-              </Button>
+                  <Button key={page.title}>
+                  <NavLink
+                    className="nav-link"
+                    to={page.path}
+                    onClick={handleCloseNavMenu}
+                  >
+                    {page.title}
+                  </NavLink>
+                </Button>
             ))}
           </Box>
         </Toolbar>

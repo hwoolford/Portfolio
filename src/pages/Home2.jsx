@@ -8,8 +8,10 @@ export default function FullWidthGrid() {
   return (
     <div className="home">
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}
-      sx={{ alignItems: "center" }}
+      <Grid container spacing={3}
+      direction="row"
+      justifyContent="space-evenly"
+      alignItems="center"
       >
         <Grid item xs={12} md={6}
         className="textContainer">
@@ -36,7 +38,9 @@ export default function FullWidthGrid() {
             </div>
         </Grid>
         <Grid item xs={12} md={6}
-        className="imgContainer">
+        className="imgContainer"
+        justifyContent="space-evenly"
+        alignItems="center">
           <img src={Portrait} alt="portrait" className="portrait" />
         </Grid>
       </Grid>

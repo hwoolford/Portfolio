@@ -3,9 +3,13 @@
   overflow: hidden;
 }
 
-/* .imgContainer {
+.container {
+  padding-left: 0 ;
+}
+
+.imgContainer {
   padding-right: 1rem;
-} */
+}
 
 .portrait {
   object-fit: cover;
@@ -13,7 +17,7 @@
 }
 
 .textContainer {
-  margin-left: 10rem;
+  padding-left: 10rem !important;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
@@ -22,6 +26,7 @@
   justify-content: center;
   font-weight: 500;
   font-family: "Quicksand", sans-serif;
+  align-items: center;
 }
 
 .hello {
