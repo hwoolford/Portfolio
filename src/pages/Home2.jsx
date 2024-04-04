@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 
 export default function FullWidthGrid() {
   return (
+    <div className="home">
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}
       sx={{ alignItems: "center" }}
@@ -40,5 +41,6 @@ export default function FullWidthGrid() {
         </Grid>
       </Grid>
     </Box>
+    </div>
   );
 }
