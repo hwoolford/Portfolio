@@ -16,10 +16,8 @@
   color: white;
   font-size: 3rem;
   flex-direction: column;
-  justify-content: center;
   font-weight: 500;
   font-family: "Quicksand", sans-serif;
-  align-items: center;
 }
 
 .hello {
