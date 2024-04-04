@@ -11,7 +11,7 @@ export default function FullWidthGrid() {
           container
           spacing={3}
           direction="row"
-          justifyContent="space-evenly"
+          justifyContent="center"
           alignItems="center"
         >
           <Grid
@@ -24,7 +24,6 @@ export default function FullWidthGrid() {
             className="textContainer"
           >
             <Grid item xs={12}>
-              {" "}
               {/* Nested grid item for better control */}
               <span className="hello">Hello,</span>
               <br />
