@@ -107,7 +107,7 @@ export default function NavBar3() {
             </Menu>
           </Box>
           <Typography
-            variant="h5"
+            variant="h3"
             noWrap
             component={Link}
             to="/"
