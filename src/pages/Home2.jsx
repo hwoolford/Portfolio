@@ -55,7 +55,6 @@ export default function FullWidthGrid() {
             className="imgContainer"
             container
             justifyContent="center"
-            alignItems="flex-end"
           >
             <img
               src={Portrait}

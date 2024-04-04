@@ -4,10 +4,6 @@
   display: flex;
 }
 
-.imgContainer {
-  align-items: start;
-}
-
 .textContainer {
   padding: 2rem 5rem !important;
   color: white;
@@ -61,11 +57,27 @@
   color: black;
 }
 
-/* @media screen and (max-width: 1610px) {
-  .button {
-    width: 15rem;
+@media screen and (max-width: 500px) {
+  .textContainer {
     font-size: 2rem;
+    padding-bottom: 0;
   }
-} */
-
-/* style={{ minHeight: "calc(100vh - 8rem)" }} // Set min-height to take up remaining space above the footer */
+  .hello {
+    font-size: 1rem;
+  }
+  .homeintro {
+    font-size: 1rem;
+  }
+  .btnContainer {
+    padding-top: 0;
+  }
+  .button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    margin: 10px auto !important;
+  }
+  .imgContainer {
+    padding-top: 0 !important;
+  }
+}
