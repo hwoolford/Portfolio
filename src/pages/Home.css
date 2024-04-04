@@ -3,9 +3,9 @@
   overflow: hidden;
 }
 
-.imgContainer {
+/* .imgContainer {
   padding-right: 1rem;
-}
+} */
 
 .portrait {
   object-fit: cover;
