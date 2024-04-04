@@ -4,11 +4,17 @@
   padding: 0.25rem
 }
 
+.nav-link:hover {
+  color:#ef0d8d;
+}
+
 .nav-link.active {
   border-bottom: 3px solid #ef0d8d;
   font-weight: bolder;
   color: white;
 }
+
+
 
 .link {
     text-shadow: 

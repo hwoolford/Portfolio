@@ -88,6 +88,11 @@ export default function NavBar3() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
+              PaperProps={{
+                sx: {
+                  backgroundColor: "#333",
+                },
+              }}
               sx={{
                 display: { xs: "block", md: "none" },
               }}
@@ -102,7 +107,7 @@ export default function NavBar3() {
             </Menu>
           </Box>
           <Typography
-            variant="h2"
+            variant="h5"
             noWrap
             component={Link}
             to="/"

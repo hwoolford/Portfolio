@@ -3,14 +3,6 @@
   overflow: hidden;
 }
 
-.container {
-  padding-left: 0 ;
-}
-
-.imgContainer {
-  padding-right: 1rem;
-}
-
 .portrait {
   object-fit: cover;
   height: 59.67rem;
