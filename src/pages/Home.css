@@ -46,7 +46,7 @@
 .button {
   width: 20rem;
   height: 4rem;
-  margin: 20px !important;
+  margin: 20px auto !important;
   border-radius: 10px;
   font-weight: bold;
   font-family: "Bebas Neue", sans-serif;
