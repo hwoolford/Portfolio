@@ -39,9 +39,11 @@ export default function FullWidthGrid() {
         </Grid>
         <Grid item xs={12} md={6}
         className="imgContainer"
-        justifyContent="space-evenly"
-        alignItems="center">
-          <img src={Portrait} alt="portrait" className="portrait" />
+        container
+        justifyContent="center"
+        // alignItems="center"
+        >
+          <img src={Portrait} alt="portrait" className="portrait" style={{ maxWidth: "100%", height: "auto" }}/>
         </Grid>
       </Grid>
     </Box>
