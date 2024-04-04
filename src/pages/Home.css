@@ -1,6 +1,7 @@
 .home {
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
 }
 
 .portrait {
@@ -41,21 +42,33 @@
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 2rem;
 }
 
-.btn {
-  width: 15rem;
+.button {
+  width: 20rem;
   height: 4rem;
-  margin: 20px auto !important;
+  margin: 20px !important;
   border-radius: 10px;
   font-weight: bold;
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
-  font-size: 2.25rem;
+  font-size: 3rem;
   background-color: #ef0d8d;
+  color: #212529;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
 }
 
-.btn:hover {
+.button:hover {
   background-color: #219ebc;
   color: black;
 }
+
+/* @media screen and (max-width: 1610px) {
+  .button {
+    width: 10rem;
+    font-size: 2rem;
+  }
+} */

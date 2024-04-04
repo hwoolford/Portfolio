@@ -29,10 +29,10 @@ export default function FullWidthGrid() {
               a passion for learning.
             </p>
             <div className="btnContainer">
-              <a className="btn work" href="./Projects">
+              <a className="button" href="./Projects">
                 View My Work
               </a>
-              <a className="btn contact" href="./Contact">
+              <a className="button" href="./Contact">
                 Contact Me
               </a>
             </div>
