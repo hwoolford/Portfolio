@@ -98,10 +98,10 @@ const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
     </StyledCard>
     <CardActions>
         <div className="btn-container">
-    <ButtonLink href={deploy} target="_blank" rel="noreferrer" color={color}>
+    <ButtonLink className="buttons" href={deploy} target="_blank" rel="noreferrer" color={color}>
         View Site
       </ButtonLink>
-      <ButtonLink href={repo} target="_blank" rel="noreferrer" color={color}>
+      <ButtonLink className="buttons" href={repo} target="_blank" rel="noreferrer" color={color}>
         View Repo
       </ButtonLink>
       </div>
