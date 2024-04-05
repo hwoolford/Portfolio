@@ -84,6 +84,10 @@ export default function Contact2() {
   return (
     <div className="container">
       <h1 className="text-center title">Contact Me</h1>
+      <div className="contact-info">
+
+      </div>
+      <div className="contact-form">
       <ThemeProvider theme={theme}>
         <Box
           container="true"
@@ -180,6 +184,7 @@ export default function Contact2() {
           </form>
         </Box>
       </ThemeProvider>
+      </div>
     </div>
   );
 }
