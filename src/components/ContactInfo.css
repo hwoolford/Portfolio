@@ -1,0 +1,14 @@
+.contact-details {
+    color: white !important;
+    font-size: 1.5rem !important;
+    font-family: "Quicksand", sans-serif !important;
+    text-transform: none !important;
+}
+
+.contact-me {
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+}
