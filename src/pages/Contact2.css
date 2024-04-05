@@ -3,10 +3,3 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
-.contact-info-title {
-    text-align: center;
-    color: white;
-    /* font-size: 3.5rem; */
-    padding-bottom: 3rem;
-}
