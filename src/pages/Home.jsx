@@ -3,7 +3,7 @@ import Portrait from "../../assets/portrait.png";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
-export default function FullWidthGrid() {
+export default function Home() {
   return (
     <div className="home">
       <Box sx={{ flexGrow: 1 }}>

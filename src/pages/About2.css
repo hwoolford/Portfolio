@@ -1,0 +1,26 @@
+.title {
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    padding: auto 5em;
+  }
+
+.portraitBlue {
+    max-height: 35rem;
+ }
+
+ .about {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}

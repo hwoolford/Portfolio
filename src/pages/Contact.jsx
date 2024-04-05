@@ -1,7 +1,7 @@
 import ContactForm from "../components/ContactForm";
 import ContactInfo from "../components/ContactInfo";
 import "./Contact.css";
-export default function Contact2() {
+export default function Contact() {
   return (
     <>
       <div className="contact-holder">
