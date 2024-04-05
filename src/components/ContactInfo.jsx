@@ -8,12 +8,12 @@ export default function ContactInfo() {
   const email = "hwoolford@gmail.com";
   const github = "https://github.com/hwoolford";
   const linkdin = "https://www.linkedin.com/in/hwoolford/";
-  
+
   return (
     <div className="contact-info-holder">
       <h2 className="contact-me">Connect with Me</h2>
       <Box container="true" noValidate autoComplete="off" sx={{ flexGrow: 1 }}>
-        <Typography variant="h1" fontSize="3.5rem" fontFamily="Quicksand">
+        <Typography className="my-name" variant="h1" fontSize="3.5rem" fontFamily="Quicksand">
           Heather Woolford
         </Typography>
         <Button

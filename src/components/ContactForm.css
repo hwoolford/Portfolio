@@ -17,7 +17,7 @@
 }
 
 .inputBox {
-  width: 100%;
+  width: 95%;
   background-color: #1f1f1f;
 }
 
@@ -55,4 +55,19 @@
 .error-text {
   /* text-align: center; */
   color: #ef0d8d;
+}
+
+@media screen and (max-width: 525px) {
+  .send-message {
+    font-size: 2.5rem;
+  }
+  .inputBox {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .send-message {
+    font-size: 2rem;
+  }
 }
