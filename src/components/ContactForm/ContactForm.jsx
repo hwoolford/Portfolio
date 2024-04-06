@@ -81,6 +81,12 @@ export default function Contact2() {
     setErrors({});
   };
 
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="message" />
+  </form>
+
   return (
     <>
       <h2 className="send-message">Send Me a Message</h2>
