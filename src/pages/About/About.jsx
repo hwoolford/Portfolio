@@ -1,5 +1,5 @@
-import "../pages/About.css";
-import Portrait from "../../assets/portraitoutline.png";
+import "../About/About.css";
+import Portrait from "../../../assets/portraitoutline.png";
 import { Box, Grid } from "@mui/material/";
 
 export default function About2() {

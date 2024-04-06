@@ -1,4 +1,4 @@
-import "./ContactForm.css";
+import "../ContactForm/ContactForm.css";
 
 import { useState } from "react";
 import {
@@ -10,7 +10,7 @@ import {
   ThemeProvider,
 } from "@mui/material/";
 import SendIcon from "@mui/icons-material/Send";
-import { validateEmail } from "../utils/validateEmail";
+import { validateEmail } from "../../utils/validateEmail";
 
 const theme = createTheme({
   palette: {

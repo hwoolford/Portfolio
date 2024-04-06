@@ -1,10 +1,10 @@
-import "../components/Footer.css";
-import githublogo from "../../assets/githublogo.png";
-import githublogowhite from "../../assets/githublogowhite.png";
-import linkedinlogo from "../../assets/linkedinlogo.png";
-import linkedinlogowhite from "../../assets/linkedinlogowhite.png";
-import stacklogo from "../../assets/stacklogo.png";
-import stacklogowhite from "../../assets/stacklogowhite.png";
+import "../Footer/Footer.css";
+import githublogo from "../../../assets/githublogo.png";
+import githublogowhite from "../../../assets/githublogowhite.png";
+import linkedinlogo from "../../../assets/linkedinlogo.png";
+import linkedinlogowhite from "../../../assets/linkedinlogowhite.png";
+import stacklogo from "../../../assets/stacklogo.png";
+import stacklogowhite from "../../../assets/stacklogowhite.png";
 
 export default function Footer() {
   return (

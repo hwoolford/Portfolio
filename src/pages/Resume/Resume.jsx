@@ -1,5 +1,5 @@
-import Download from "../components/Download"
-import "../pages/Resume.css";
+import Download from "../../components/DownloadResume/Download"
+import "../Resume/Resume.css";
 
 export default function Resume() {
   return (

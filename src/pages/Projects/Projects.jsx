@@ -10,13 +10,13 @@ import {
   Typography,
 } from "@mui/material";
 import Color from "color";
-import "../pages/Projects.css";
-import wetmyplants from "../../assets/wetmyplants.png";
-import storyseeker from "../../assets/storyseeker.png";
-import weatherdashboard from "../../assets/weatherdashboard.png";
-import codingquiz from "../../assets/codingquiz.png";
-import workdayscheduler from "../../assets/workdayscheduler.png";
-import cpms from "../../assets/cpms.png";
+import "../Projects/Projects.css";
+import wetmyplants from "../../../assets/wetmyplants.png";
+import storyseeker from "../../../assets/storyseeker.png";
+import weatherdashboard from "../../../assets/weatherdashboard.png";
+import codingquiz from "../../../assets/codingquiz.png";
+import workdayscheduler from "../../../assets/workdayscheduler.png";
+import cpms from "../../../assets/cpms.png";
 
 const CardActionAreaActionArea = styled(CardActionArea)(() => ({
   borderRadius: 16,

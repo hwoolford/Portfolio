@@ -1,5 +1,5 @@
-import "../components/Download.css";
-import resume from "../../assets/hwoolford-resume.pdf";
+import "../DownloadResume/Download.css";
+import resume from "../../../assets/hwoolford-resume.pdf";
 
 export default function Download() {
     return (

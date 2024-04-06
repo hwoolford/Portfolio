@@ -1,4 +1,4 @@
-import "./ContactInfo.css";
+import "../ContactInfo/ContactInfo.css";
 import { Typography, Button, Box } from "@mui/material/";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
