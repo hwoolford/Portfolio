@@ -82,9 +82,9 @@ export default function Contact2() {
   };
 
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <TextField type="text" name="name" />
-      <TextField type="email" name="email" />
-      <TextField type="text" name="message" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="message" />
   </form>
 
   return (
@@ -103,7 +103,7 @@ export default function Contact2() {
               name="contact"
               onSubmit={handleFormSubmit}
               method="POST"
-              // data-netlify="true"
+              data-netlify="true"
             >
               <input type="hidden" name="form-name" value="contact" />
               <Grid container spacing={3} justifyContent="center">
