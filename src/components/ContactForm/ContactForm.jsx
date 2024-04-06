@@ -3,10 +3,10 @@ import "../ContactForm/ContactForm.css";
 import { useState } from "react";
 import {
   // Box,
-  // Button,
+  Button,
   // Grid,
 } from "@mui/material/";
-// import SendIcon from "@mui/icons-material/Send";
+import SendIcon from "@mui/icons-material/Send";
 import { validateEmail } from "../../utils/validateEmail";
 
 
@@ -124,13 +124,13 @@ export default function ContactForm() {
                 {/* </Grid> */}
                 <div className="button-container">
                     {/* <Grid item xs={12} md={12} justifyContent="center" container> */}
-                    <button
-                      // variant="contained"
+                    <Button
+                      variant="contained"
                       type="submit"
-                      // endIcon={<SendIcon style={{ fontSize: "2.75rem" }} />}
+                      endIcon={<SendIcon style={{ fontSize: "2.75rem" }} />}
                       >
                         Send
-                      </button>
+                      </Button>
                     {/* </Grid> */}
                 </div>
               {/* </Grid> */}
