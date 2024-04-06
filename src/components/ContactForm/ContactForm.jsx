@@ -114,7 +114,6 @@ export default function ContactForm() {
                 alignItems="center"
               >
                 <textarea
-                  type="text"
                   required
                   className="inputBox"
                   name="message"
