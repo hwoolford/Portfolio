@@ -103,7 +103,7 @@ export default function Contact2() {
               name="contact"
               onSubmit={handleFormSubmit}
               method="POST"
-              data-netlify="true"
+              // data-netlify="true"
             >
               <input type="hidden" name="form-name" value="contact" />
               <Grid container spacing={3} justifyContent="center">
