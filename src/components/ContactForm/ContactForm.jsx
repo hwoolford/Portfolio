@@ -3,27 +3,14 @@ import "../ContactForm/ContactForm.css";
 import { useState } from "react";
 import {
   Box,
-  TextField,
   Button,
   Grid,
-  createTheme,
-  ThemeProvider,
 } from "@mui/material/";
 import SendIcon from "@mui/icons-material/Send";
 import { validateEmail } from "../../utils/validateEmail";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#219ebc",
-    },
-    secondary: {
-      main: "#ef0d8d",
-    },
-  },
-});
 
-export default function Contact2() {
+export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -40,32 +27,8 @@ export default function Contact2() {
     }
   };
 
-  const handleBlur = (e) => {
-    const { name, value } = e.target;
-    if (!value.trim()) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        [name]: "Field is required",
-      }));
-    } else {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        [name]: "",
-      }));
-    }
-  };
-
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    if (!name || !message) {
-      setErrors({
-        name: name ? "" : "Please fill out this field",
-        email: email ? "" : "Please fill out this field",
-        message: message ? "" : "Please fill out this field",
-      });
-      return;
-    }
 
     if (!validateEmail(email)) {
       setErrors((prevErrors) => ({
@@ -81,78 +44,66 @@ export default function Contact2() {
     setErrors({});
   };
 
+  // eslint-disable-next-line react/no-unknown-property
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="text" name="message" />
-  </form>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>;
 
   return (
     <>
       <h2 className="send-message">Send Me a Message</h2>
       <div className="form-container">
-        <ThemeProvider theme={theme}>
           <Box
             container="true"
             noValidate
             autoComplete="off"
             sx={{ flexGrow: 1 }}
           >
-            <form
-              className="form"
-              name="contact"
-              onSubmit={handleFormSubmit}
-              method="POST"
-              data-netlify="true"
-            >
+            <form className="form" name="contact" onSubmit={handleFormSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <Grid container spacing={3} justifyContent="center">
                 <Grid
                   item
                   xs={12}
-                  md={12}
+                  md={6}
                   container
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <TextField
-                  type="text"
-                    variant="outlined"
+                  <input
+                    type="text"
                     required
                     className="inputBox"
                     name="name"
                     id="name"
-                    label="Full Name"
-                    color="primary"
-                    focused
+                    aria-label="Full Name"
+                    placeholder="Full Name"
                     value={name}
                     onChange={handleInputChange}
-                    onBlur={handleBlur}
-                  />
+                  ></input>
                   {errors.name && <p className="error-text">{errors.name}</p>}
                 </Grid>
                 <Grid
                   item
                   xs={12}
-                  md={12}
+                  md={6}
                   container
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <TextField
-                  type="email"
-                    variant="outlined"
+                  <input
+                    type="email"
                     required
                     className="inputBox"
                     name="email"
                     id="email"
-                    label="Email Address"
-                    color="primary"
-                    focused
+                    aria-label="Email Address"
+                    placeholder="Email Address"
                     value={email}
                     onChange={handleInputChange}
-                    onBlur={handleBlur}
-                  />
+                  ></input>
                   {errors.email && <p className="error-text">{errors.email}</p>}
                 </Grid>
                 <Grid
@@ -163,40 +114,35 @@ export default function Contact2() {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <TextField
-                  type="text"
-                    variant="outlined"
+                  <textarea
+                    type="text"
                     required
                     className="inputBox"
                     name="message"
                     id="message"
-                    label="Your Message"
-                    color="primary"
-                    focused
+                    aria-label="Your Message"
+                    placeholder="Your Message"
                     value={message}
-                    multiline
                     onChange={handleInputChange}
-                    onBlur={handleBlur}
-                  />
+                  ></textarea>
                   {errors.message && (
                     <p className="error-text">{errors.message}</p>
                   )}
                 </Grid>
-                <div className="btn-container">
-                  <Grid item xs={12} md={12} justifyContent="center" container>
+                <div className="button-container">
+                    <Grid item xs={12} md={12} justifyContent="center" container>
                     <Button
                       variant="contained"
                       type="submit"
                       endIcon={<SendIcon style={{ fontSize: "2.75rem" }} />}
-                    >
-                      Send
-                    </Button>
-                  </Grid>
+                      >
+                        Send
+                      </Button>
+                    </Grid>
                 </div>
               </Grid>
             </form>
           </Box>
-        </ThemeProvider>
       </div>
     </>
   );
