@@ -10,6 +10,8 @@ import SendIcon from "@mui/icons-material/Send";
 import { validateEmail } from "../../utils/validateEmail";
 
 
+
+
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -26,6 +28,12 @@ export default function ContactForm() {
       setMessage(value);
     }
   };
+
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
