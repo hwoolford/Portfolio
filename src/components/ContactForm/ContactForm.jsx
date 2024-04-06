@@ -40,6 +40,16 @@ export default function ContactForm() {
 
     console.log(errors);
 
+    // Submit the form
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      body: new FormData(form),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => console.error(error));
+
+    // Clear form fields and errors
     setName("");
     setEmail("");
     setMessage("");
