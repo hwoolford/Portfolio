@@ -3,10 +3,10 @@ import "../ContactForm/ContactForm.css";
 import { useState } from "react";
 import {
   // Box,
-  Button,
+  // Button,
   // Grid,
 } from "@mui/material/";
-import SendIcon from "@mui/icons-material/Send";
+// import SendIcon from "@mui/icons-material/Send";
 import { validateEmail } from "../../utils/validateEmail";
 
 
@@ -47,11 +47,7 @@ export default function ContactForm() {
   };
 
   // eslint-disable-next-line react/no-unknown-property
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message"></textarea>
-  </form>;
+
 
   return (
     <>
