@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import "../ContactForm/ContactForm.css";
 
 import { useState } from "react";
@@ -29,11 +30,11 @@ export default function ContactForm() {
     }
   };
 
-  const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //       .join("&");
+  // }
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -53,13 +54,15 @@ export default function ContactForm() {
     setMessage("");
     setErrors({});
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ "form-name": "contact", ...this.state })
+    // })
+    //   .then(() => alert("Success!"))
+    //   .catch(error => alert(error));
+
+      
   };
 
 
@@ -73,7 +76,7 @@ export default function ContactForm() {
             autoComplete="off"
             sx={{ flexGrow: 1 }}
           > 
-            <form className="form" name="contact" method="post" data-netlify="true" onSubmit={handleFormSubmit}>
+            <form netlify-honeypot="bot-field" className="form" id="contact-form" name="contact" method="post" data-netlify="true" onSubmit={handleFormSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <Grid container spacing={3} justifyContent="center">
                 <Grid
@@ -153,4 +156,4 @@ export default function ContactForm() {
       </div>
     </>
   );
-}
+  }
