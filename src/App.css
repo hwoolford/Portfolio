@@ -7,26 +7,15 @@
 }
 
 .main-content {
-  /* background-color: #d8dbe2; */
-  background-color: #181818;
   flex: 1;
 }
 
 h1 {
   font-family: "Francois One", sans-serif;
-  font-weight: 400;
   font-style: normal;
-  margin: 5rem;
-  font-size: 5rem;
-  /* color: #1f1f1f; */
-  /* color: #219ebc; */
-  /* color: #ef0d8d; */
+  margin: 3rem;
+  font-size: 4em;
   color: white;
-  /* text-shadow: 
-  -2px -2px 0 #ef0d8d,  
-   2px -2px 0 #ef0d8d,
-  -2px  2px 0 #ef0d8d,
-   2px  2px 0 #ef0d8d; */
 }
 
 ul {

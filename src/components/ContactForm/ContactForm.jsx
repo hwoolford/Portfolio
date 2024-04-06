@@ -1,12 +1,7 @@
-/* eslint-disable react/no-unknown-property */
 import "../ContactForm/ContactForm.css";
 
 import { useState } from "react";
-import {
-  Box,
-  Button,
-  Grid,
-} from "@mui/material/";
+import { Box, Button, Grid } from "@mui/material/";
 import SendIcon from "@mui/icons-material/Send";
 import { validateEmail } from "../../utils/validateEmail";
 
