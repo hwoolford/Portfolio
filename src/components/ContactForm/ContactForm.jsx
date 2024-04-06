@@ -128,7 +128,7 @@ export default function ContactForm() {
               <div className="button-container">
                 <Grid item xs={12} md={12} justifyContent="center" container>
                   <button
-                    variant="contained"
+                    // variant="contained"
                     type="submit"
                     // endIcon={<SendIcon style={{ fontSize: "2.75rem" }} />}
                   >
