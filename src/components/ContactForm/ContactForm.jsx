@@ -94,6 +94,7 @@ export default function Contact2() {
           >
             <form
               className="form"
+              name="contact"
               onSubmit={handleFormSubmit}
               method="POST"
               data-netlify="true"
