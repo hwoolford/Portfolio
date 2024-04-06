@@ -2,9 +2,9 @@ import "../ContactForm/ContactForm.css";
 
 import { useState } from "react";
 import {
-  // Box,
+  Box,
   Button,
-  // Grid,
+  Grid,
 } from "@mui/material/";
 import SendIcon from "@mui/icons-material/Send";
 import { validateEmail } from "../../utils/validateEmail";
@@ -46,30 +46,28 @@ export default function ContactForm() {
     setErrors({});
   };
 
-  // eslint-disable-next-line react/no-unknown-property
-
 
   return (
     <>
       <h2 className="send-message">Send Me a Message</h2>
       <div className="form-container">
-          {/* <Box */}
-            {/* container="true"
+          <Box
+          container="true"
             noValidate
             autoComplete="off"
             sx={{ flexGrow: 1 }}
-          > */}
+          > 
             <form className="form" name="contact" method="post" data-netlify="true" onSubmit={handleFormSubmit}>
               <input type="hidden" name="form-name" value="contact" />
-              {/* <Grid container spacing={3} justifyContent="center"> */}
-                {/* <Grid
+              <Grid container spacing={3} justifyContent="center">
+                <Grid
                   item
                   xs={12}
                   md={6}
                   container
                   justifyContent="center"
                   alignItems="center"
-                 >  */}
+                 > 
                   <input
                     type="text"
                     required
@@ -81,15 +79,15 @@ export default function ContactForm() {
                     value={name}
                     onChange={handleInputChange}
                   ></input>
-                {/* </Grid> */}
-                {/* <Grid
+                </Grid>
+                <Grid
                   item
                   xs={12}
                   md={6}
                   container
                   justifyContent="center"
                   alignItems="center"
-                > */}
+                >
                   <input
                     type="email"
                     required
@@ -101,15 +99,15 @@ export default function ContactForm() {
                     value={email}
                     onChange={handleInputChange}
                   ></input>
-                {/* </Grid> */}
-                {/* <Grid
+                </Grid>
+                <Grid
                   item
                   xs={12}
                   md={12}
                   container
                   justifyContent="center"
                   alignItems="center"
-                > */}
+                >
                   <textarea
                     type="text"
                     required
@@ -121,9 +119,9 @@ export default function ContactForm() {
                     value={message}
                     onChange={handleInputChange}
                   ></textarea>
-                {/* </Grid> */}
+                </Grid>
                 <div className="button-container">
-                    {/* <Grid item xs={12} md={12} justifyContent="center" container> */}
+                    <Grid item xs={12} md={12} justifyContent="center" container>
                     <Button
                       variant="contained"
                       type="submit"
@@ -131,11 +129,11 @@ export default function ContactForm() {
                       >
                         Send
                       </Button>
-                    {/* </Grid> */}
+                    </Grid>
                 </div>
-              {/* </Grid> */}
+              </Grid>
             </form>
-          {/* </Box> */}
+          </Box>
       </div>
     </>
   );
