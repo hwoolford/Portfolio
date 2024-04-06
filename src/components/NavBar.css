@@ -1,154 +1,71 @@
-.active {
-  background-color: #ef0d8d;
-  color: #181818;
-  font-weight: bolder;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1f1f1f;
-  border-bottom: solid #219ebc 5px;
-  /* position: sticky;
-  top: 0; */
-  height: 7rem;
-}
-
-nav .title {
-  margin: 2rem;
-  font-size: 3.5rem;
-  text-decoration: none;
-  color: #219ebc;
-  font-family: "Francois One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-nav ul {
-  display: flex;
-  margin: 2rem;
-}
-
-nav ul.open {
-  display: flex;
-}
-
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  display: block;
-  margin: 0 0.5rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-size: 2rem;
+.nav-link {
   color: white;
-  font-weight: 400;
-  font-family: "Bebas Neue", sans-serif;
-  font-style: normal;
+  display: block;
+  padding: 0.25rem
 }
 
-/* apply this styling if the element is not in the active class (it's not the active page) */
-nav ul li a:not(.active):hover {
-  /* background-color: #ef0d8d; */
-  color: #ef0d8d;
+.nav-link:hover {
+  color:#ef0d8d;
 }
 
-nav .menu {
-  position: absolute;
-  display: none;
-  top: 0.75rem;
-  right: 0.5rem;
-  width: 2.25rem;
-  height: 2rem;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: all 0.5s ease-in-out;
+.nav-link.active {
+  border-bottom: 3px solid #ef0d8d;
+  font-weight: bolder;
+  color: white;
 }
 
+/* .link {
+    text-shadow: 
+     -2px -2px 0 #219ebc,  
+     2px -2px 0 #219ebc,
+    -2px  2px 0 #219ebc,
+     2px  2px 0 #219ebc;
+} */
 
-nav .menu span {
-  height: 0.4rem;
-  width: 100%;
-  border-radius: 0.2rem;
-  background-color: white;
-}
-
-@media screen and (max-width: 1115px) {
-  nav .title {
-    font-size: 3rem;
-  }
-  nav ul li a {
-    font-size: 1.5rem;
+@media screen and (max-width: 1040px) {
+  .link {
+    font-size: 3.5rem !important;
   }
 }
 
-@media screen and (max-width: 960px) {
-  nav .title {
-    margin: 0 0.5rem;
-  }
-  nav ul {
-    margin: 0 0.5rem;
+@media screen and (max-width: 970px) {
+  .link {
+    font-size: 3rem !important;
   }
 }
 
-@media screen and (max-width: 862px) {
-  nav {
-    flex-wrap: wrap;
-    height: 10rem;
-    justify-content: center;
+@media screen and (max-width: 902px) {
+  .link {
+    font-size: 2.75rem !important;
   }
-  /* nav .title {
-    margin-bottom: 0;
+}
+
+@media screen and (max-width: 525px) {
+  .link {
+    font-size: 2.5rem !important;
   }
-  nav ul {
-    margin-top: 0;
-    margin-bottom: 5rem;
-  } */
 }
 
 @media screen and (max-width: 480px) {
-  nav .menu {
-    display: flex;
-  }
-  nav {
-    flex-direction: column;
-    align-items: start;
-    height: 6rem;
-  }
-  nav ul {
-    display: none;
-    width: 100%;
-    margin-bottom: 0.25rem;
-    flex-direction: column;
-  }
-  nav ul.open {
-    display: flex;
-  }
-  nav ul li {
-    width: 100%;
-    text-align: center;
-  }
-  nav ul li a {
-    margin: 0.2rem 0.5rem;
-  }
-  nav .title {
-    font-size: 2.5rem;
-    text-align: center;
+  .link {
+    font-size: 2rem !important;
   }
 }
 
-@media screen and (max-width: 400px) {
-  nav .title {
-    font-size: 2rem;
+@media screen and (max-width: 415px) {
+  .link {
+    font-size: 1.75rem !important;
   }
 }
 
-@media screen and (max-width: 330px) {
-  nav .title {
-    font-size: 1.5rem;
+@media screen and (max-width: 380px) {
+  .link {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .link {
+    font-size: 1.25rem !important;
   }
 }

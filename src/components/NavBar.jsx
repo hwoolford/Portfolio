@@ -1,38 +1,145 @@
-import "../components/NavBar.css";
+import "./NavBar.css";
+import * as React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
 
-export default function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+const pages = [
+  { title: "About Me", path: "/about" },
+  { title: "Projects", path: "/projects" },
+  { title: "Contact", path: "/contact" },
+  { title: "Resume", path: "/resume" },
+];
+
+export default function NavBar3() {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
-    <nav>
-      <Link to="/" className="title">
-        HEATHER WOOLFORD
-      </Link>
-      <div
-        className="menu"
-        onClick={() => {
-          setMenuOpen(!menuOpen);
-        }}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul className={menuOpen ? "open" : ""}>
-        <li>
-          <NavLink to="/about">About Me</NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects">Projects</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-        <li>
-          <NavLink to="/resume">Resume</NavLink>
-        </li>
-      </ul>
-    </nav>
+    <AppBar
+      position="static"
+      sx={{
+        backgroundColor: "#1f1f1f",
+        height: "6rem",
+        justifyContent: "center",
+      }}
+    >
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Typography
+            variant="h1"
+            noWrap
+            component={Link}
+            to="/"
+            exact="true"
+            className="link"
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "Licorice",
+              fontWeight: 400,
+              letterSpacing: ".2rem",
+              fontSize: "4rem",
+              // color: "#ef0d8d",
+              color: "#219ebc",
+              textDecoration: "none",
+            }}
+          >
+            Heather Woolford
+          </Typography>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              PaperProps={{
+                sx: {
+                  backgroundColor: "#333",
+                },
+              }}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+                  <NavLink to={page.path} className="nav-link">
+                    <Typography textAlign="center">{page.title}</Typography>
+                  </NavLink>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+          <Typography
+            variant="h3"
+            noWrap
+            component={Link}
+            to="/"
+            exact="true"
+            className="link"
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              fontFamily: "Licorice",
+              fontWeight: 400,
+              letterSpacing: ".2rem",
+              color: "#fff",
+              textDecoration: "none",
+            }}
+          >
+            Heather Woolford
+          </Typography>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            {pages.map((page) => (
+                  <Button key={page.title}>
+                  <NavLink
+                    className="nav-link"
+                    to={page.path}
+                    onClick={handleCloseNavMenu}
+                  >
+                    {page.title}
+                  </NavLink>
+                </Button>
+            ))}
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 }
