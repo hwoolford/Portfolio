@@ -14,10 +14,10 @@
   </head>
   <body>
     <div id="root"></div>
-    <form name="contact" id="contact-form" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
+    <form name="contact" id="contact-form" method="post" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" required />
+      <input type="email" name="email" required />
+      <textarea name="message" required></textarea>
     </form>
     ;
     <script type="module" src="/src/main.jsx"></script>
