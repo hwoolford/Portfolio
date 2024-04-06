@@ -99,6 +99,7 @@ export default function Contact2() {
               method="POST"
               data-netlify="true"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <Grid container spacing={3} justifyContent="center">
                 <Grid
                   item
