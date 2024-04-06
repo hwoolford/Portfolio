@@ -63,7 +63,7 @@ export default function ContactForm() {
             autoComplete="off"
             sx={{ flexGrow: 1 }}
           >
-            <form className="form" name="contact" method="post" onSubmit={handleFormSubmit}>
+            <form className="form" name="contact" method="post" data-netlify="true" onSubmit={handleFormSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <Grid container spacing={3} justifyContent="center">
                 <Grid
