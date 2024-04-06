@@ -82,9 +82,9 @@ export default function Contact2() {
   };
 
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="text" name="message" />
+      <TextField type="text" name="name" />
+      <TextField type="email" name="email" />
+      <TextField type="text" name="message" />
   </form>
 
   return (
@@ -116,6 +116,7 @@ export default function Contact2() {
                   alignItems="center"
                 >
                   <TextField
+                  type="text"
                     variant="outlined"
                     required
                     className="inputBox"
@@ -139,6 +140,7 @@ export default function Contact2() {
                   alignItems="center"
                 >
                   <TextField
+                  type="email"
                     variant="outlined"
                     required
                     className="inputBox"
@@ -162,6 +164,7 @@ export default function Contact2() {
                   alignItems="center"
                 >
                   <TextField
+                  type="text"
                     variant="outlined"
                     required
                     className="inputBox"
