@@ -128,13 +128,13 @@ export default function ContactForm() {
                 {/* </Grid> */}
                 <div className="button-container">
                     {/* <Grid item xs={12} md={12} justifyContent="center" container> */}
-                    <Button
-                      variant="contained"
+                    <button
+                      // variant="contained"
                       type="submit"
-                      endIcon={<SendIcon style={{ fontSize: "2.75rem" }} />}
+                      // endIcon={<SendIcon style={{ fontSize: "2.75rem" }} />}
                       >
                         Send
-                      </Button>
+                      </button>
                     {/* </Grid> */}
                 </div>
               {/* </Grid> */}
