@@ -83,7 +83,7 @@ export default function Contact2() {
 
   return (
     <>
-    <h2 className="send-message">Send Me a Message</h2>
+      <h2 className="send-message">Send Me a Message</h2>
       <div className="form-container">
         <ThemeProvider theme={theme}>
           <Box
@@ -92,7 +92,12 @@ export default function Contact2() {
             autoComplete="off"
             sx={{ flexGrow: 1 }}
           >
-            <form className="form" onSubmit={handleFormSubmit}>
+            <form
+              className="form"
+              onSubmit={handleFormSubmit}
+              method="POST"
+              data-netlify="true"
+            >
               <Grid container spacing={3} justifyContent="center">
                 <Grid
                   item
