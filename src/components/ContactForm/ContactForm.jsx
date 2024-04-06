@@ -38,6 +38,8 @@ export default function ContactForm() {
       return;
     }
 
+    console.log(errors)
+
     setName("");
     setEmail("");
     setMessage("");
@@ -61,7 +63,7 @@ export default function ContactForm() {
             autoComplete="off"
             sx={{ flexGrow: 1 }}
           >
-            <form className="form" name="contact" onSubmit={handleFormSubmit}>
+            <form className="form" name="contact" method="post" onSubmit={handleFormSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <Grid container spacing={3} justifyContent="center">
                 <Grid
@@ -83,7 +85,6 @@ export default function ContactForm() {
                     value={name}
                     onChange={handleInputChange}
                   ></input>
-                  {errors.name && <p className="error-text">{errors.name}</p>}
                 </Grid>
                 <Grid
                   item
@@ -104,7 +105,6 @@ export default function ContactForm() {
                     value={email}
                     onChange={handleInputChange}
                   ></input>
-                  {errors.email && <p className="error-text">{errors.email}</p>}
                 </Grid>
                 <Grid
                   item
@@ -125,9 +125,6 @@ export default function ContactForm() {
                     value={message}
                     onChange={handleInputChange}
                   ></textarea>
-                  {errors.message && (
-                    <p className="error-text">{errors.message}</p>
-                  )}
                 </Grid>
                 <div className="button-container">
                     <Grid item xs={12} md={12} justifyContent="center" container>
