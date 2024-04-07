@@ -13,6 +13,11 @@
     padding-top: 5rem;
 }
 
+.my-name {
+    text-align: center;
+    color: white;
+}
+
 @media screen and (max-width: 525px) {
     .contact-details {
         font-size: 1.5rem !important;
