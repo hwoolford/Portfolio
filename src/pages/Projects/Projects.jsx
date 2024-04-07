@@ -112,7 +112,7 @@ const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
 export default function Projects() {
   return (
     <div className="main-container">
-      <h1 className="heading">Projects</h1>
+      <h1 className="page-title">Projects</h1>
       <Grid className="grid-container" container spacing={4}>
         <Grid item className="project-container">
           <CustomCard

@@ -4,7 +4,7 @@ import "../Resume/Resume.css";
 export default function Resume() {
   return (
     <div className="resume">
-      <h1 className="text-center heading">Technical Skills</h1>
+      <h1 className="page-title">Technical Skills</h1>
       <div className="skills d-flex flex-row justify-content-center">
         <div className="frontend col-md-6 col-sm-12 text-center">
           <h2 className="resume-heading">FRONT-END</h2>

@@ -10,12 +10,13 @@
   flex: 1;
 }
 
-h1 {
+.page-title {
   font-family: "Francois One", sans-serif;
   font-style: normal;
   margin: 3rem;
   font-size: 4em;
   color: white;
+  text-align: center;
 }
 
 ul {
