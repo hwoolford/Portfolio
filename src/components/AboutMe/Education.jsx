@@ -8,32 +8,34 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={4}
+          md={5}
           container
           justifyContent="start"
           alignItems="start"
-          
+          fontFamily="Quicksand"
         >
           Full Stack Web Development Certificate
         </Grid>
         <Grid
           item
           xs={12}
-          md={4}
+          md={5}
           container
           justifyContent="start"
           alignItems="start"
+          fontFamily="Quicksand"
         >
           University of New Hampshire, Portsmouth, NH
         </Grid>
         <Grid
           item
           xs={12}
-          md={4}
+          md={2}
           container
           justifyContent="end"
           paddingRight="0.25rem"
           alignItems="start"
+          fontFamily="Quicksand"
         >
           March 2024
         </Grid>
@@ -42,31 +44,34 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={4}
+          md={5}
           container
           justifyContent="start"
           alignItems="start"
+          fontFamily="Quicksand"
         >
           M. Ed. Teacher Leadership
         </Grid>
         <Grid
           item
           xs={12}
-          md={4}
+          md={5}
           container
           justifyContent="start"
           alignItems="start"
+          fontFamily="Quicksand"
         >
           Lamar University, Beaumont, TX
         </Grid>
         <Grid
           item
           xs={12}
-          md={4}
+          md={2}
           container
           justifyContent="end"
           paddingRight="0.25rem"
           alignItems="start"
+          fontFamily="Quicksand"
         >
           2007 – 2009
         </Grid>
@@ -75,31 +80,34 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={4}
+          md={5}
           container
           justifyContent="start"
           alignItems="start"
+          fontFamily="Quicksand"
         >
           B.S. Interdisciplinary Studies
         </Grid>
         <Grid
           item
           xs={12}
-          md={4}
+          md={5}
           container
           justifyContent="start"
           alignItems="start"
+          fontFamily="Quicksand"
         >
           Lamar University, Beaumont, TX
         </Grid>
         <Grid
           item
           xs={12}
-          md={4}
+          md={2}
           container
           justifyContent="end"
           paddingRight="0.25rem"
           alignItems="start"
+          fontFamily="Quicksand"
         >
           1992 – 1996
         </Grid>

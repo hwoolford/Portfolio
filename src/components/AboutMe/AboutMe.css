@@ -1,9 +1,9 @@
 .AboutContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .about {
   font-size: 1.25rem;
@@ -14,34 +14,39 @@
 }
 
 .techno-titles {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 .techno-details {
-    background-color: #ef0d8d;
-    font-weight: bold;
-    color: white;
-    border: 1px solid white;
+  background-color: #ef0d8d;
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  font-family: "Quicksand", sans-serif;
 }
 
-#panel1-header, #panel2-header, #panel3-header, #panel4-header, #panel5-header {
-    color: white;
-    background-color: #1f1f1f;
-    border: 1px solid #219ebc;
+#panel1-header,
+#panel2-header,
+#panel3-header,
+#panel4-header,
+#panel5-header {
+  color: white;
+  background-color: #1f1f1f;
+  border: 1px solid #219ebc;
 }
-
 
 .portraitBlue {
-    max-width: 100%; /* Ensure the image doesn't overflow its container */
-    height: auto; /* Maintain the aspect ratio of the image */
-  }
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
 
-  .about-section-title {
-    font-family: "Francois One", sans-serif;
-    font-style: normal;
-    font-size: 3em;
-    color: white;
-    text-align: center;
-    padding-bottom: 2rem;
-  }
+.about-section-title {
+  font-family: "Francois One", sans-serif;
+  font-style: normal;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  padding-bottom: 2rem;
+}
