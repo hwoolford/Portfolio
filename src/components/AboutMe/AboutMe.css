@@ -6,7 +6,7 @@
 }
 
 .about {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: 500;
   color: white;
   font-family: "Quicksand", sans-serif;
@@ -15,7 +15,7 @@
 
 .techno-titles {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Quicksand", sans-serif;
 }
 

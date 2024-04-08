@@ -105,7 +105,7 @@ export default function Experience() {
               fontSize="1rem"
             >
               Provided coaching and support for math teachers. Served on the
-              administration team and helped supervise teachers and students.{" "}
+              administration team and helped support teachers and students.
               <br /> <br />
             </Typography>
            

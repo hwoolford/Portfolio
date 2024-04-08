@@ -55,7 +55,6 @@ export default function NavBar3() {
               fontWeight: 400,
               letterSpacing: ".2rem",
               fontSize: "4rem",
-              // color: "#ef0d8d",
               color: "#219ebc",
               textDecoration: "none",
             }}
