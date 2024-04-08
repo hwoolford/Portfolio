@@ -52,7 +52,6 @@ export default function Experience() {
             <Typography
               className="experience-location"
               variant="h2"
-              fontSize="1.25rem"
               fontStyle="italic"
             >
               Spring ISD | Houston, TX
@@ -94,7 +93,6 @@ export default function Experience() {
             <Typography
               className="experience-location"
               variant="h2"
-              fontSize="1.25rem"
               fontStyle="italic"
             >
               Spring ISD | Houston, TX
@@ -137,7 +135,6 @@ export default function Experience() {
             <Typography
               className="experience-location"
               variant="h2"
-              fontSize="1.25rem"
               fontStyle="italic"
             >
               Spring ISD | Houston, TX
