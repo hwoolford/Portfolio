@@ -31,7 +31,7 @@ export default function Experience() {
             <Typography
               className="experience-date"
               variant="h1"
-              fontSize="1.5rem"
+              fontSize="1.25rem"
               >
               2020 – 2023
             </Typography>
@@ -44,7 +44,7 @@ export default function Experience() {
             <Typography
               className="experience-title"
               variant="h1"
-              fontSize="1.75rem"
+              fontSize="1.5rem"
               fontWeight="bold"
               >
               Professional Development Facilitator
@@ -73,7 +73,7 @@ export default function Experience() {
           <Typography
               className="experience-date"
               variant="h1"
-              fontSize="1.5rem"
+              fontSize="1.25rem"
             >
               2016 – 2020 <br /> <br />
             </Typography>
@@ -86,7 +86,7 @@ export default function Experience() {
           <Typography
               className="experience-title"
               variant="h1"
-              fontSize="1.75rem"
+              fontSize="1.5rem"
               fontWeight="bold"
             >
               Elementary Math Coach
@@ -116,7 +116,7 @@ export default function Experience() {
             <Typography
               className="experience-date"
               variant="h1"
-              fontSize="1.5rem"
+              fontSize="1.25rem"
             >
               2002 – 2016
             </Typography>
@@ -129,7 +129,7 @@ export default function Experience() {
             <Typography
               className="experience-title"
               variant="h1"
-              fontSize="1.75rem"
+              fontSize="1.5rem"
               fontWeight="bold"
             >
               Elementary Teacher
