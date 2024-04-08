@@ -133,7 +133,7 @@ export default function NavBar() {
               fontFamily: "Licorice",
               fontWeight: 400,
               letterSpacing: ".2rem",
-              color: "#fff",
+              color: "#219ebc",
               textDecoration: "none",
             }}
           >
