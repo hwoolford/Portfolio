@@ -103,6 +103,20 @@ export default function NavBar() {
                   </NavLink>
                 </MenuItem>
               ))}
+              <MenuItem
+                key="Resume"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  justifyContent: "center", 
+                  paddingTop: 0, 
+                  paddingBottom: 1,
+                  paddingLeft: 1,
+                }}
+              >
+                <NavLink>
+                  <Resume />
+                </NavLink>
+              </MenuItem>
             </Menu>
           </Box>
           <Typography
