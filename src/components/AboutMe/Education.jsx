@@ -30,10 +30,9 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={2}
+          md={1}
           container
-          justifyContent="end"
-          paddingRight="0.25rem"
+          justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
         >
@@ -66,10 +65,9 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={2}
+          md={1}
           container
-          justifyContent="end"
-          paddingRight="0.25rem"
+          justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
         >
@@ -102,10 +100,9 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={2}
+          md={1}
           container
-          justifyContent="end"
-          paddingRight="0.25rem"
+          justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
         >
