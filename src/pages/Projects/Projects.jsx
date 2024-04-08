@@ -135,7 +135,7 @@ export default function Projects() {
             }
             image={wetmyplants}
             deploy={"https://thawing-dawn-01968-1886d8c04121.herokuapp.com/"}
-            repo={"https://github.com/CRNaro/group-project-02"}
+            repo={"https://github.com/hwoolford/i-wet-my-plants"}
           />
         </Grid>
         <Grid item className="project-container">
