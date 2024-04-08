@@ -1,5 +1,5 @@
 import "../Home/Home.css";
-import Portrait from "../../../assets/portrait.png";
+import Portrait from "../../../assets/portrait-1.png";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
