@@ -22,7 +22,7 @@ export default function Experience() {
   return (
     <>
     <h1 className="about-section-title">Experience</h1>
-    <Grid container justifyContent="center" alignItems="center">
+    <Grid container justifyContent="center" alignItems="center" color="white">
     <Grid item xs={12} md={12}>
     <ThemeProvider theme={theme}>
       <Timeline position="alternate">
