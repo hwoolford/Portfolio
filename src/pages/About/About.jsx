@@ -12,7 +12,7 @@ export default function About() {
           item
           xs={12}
           md={8}
-          sx={{ paddingBottom: '5rem' }}
+          sx={{ paddingBottom: '2rem' }}
         >
           <AboutSummary style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}/>
         </Grid>
@@ -20,7 +20,7 @@ export default function About() {
           item
           xs={12}
           md={4}
-          sx={{ paddingBottom: '5rem' }}
+          sx={{ paddingBottom: '2rem' }}
         >
           <Technologies style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} />
         </Grid>
@@ -28,7 +28,6 @@ export default function About() {
           item
           xs={12}
           md={6}
-          sx={{ paddingBottom: '5rem' }}
         >
            <Education style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}/>
           
