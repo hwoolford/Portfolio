@@ -30,7 +30,7 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={1}
+          md={2}
           container
           justifyContent="start"
           alignItems="start"
@@ -65,7 +65,7 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={1}
+          md={2}
           container
           justifyContent="start"
           alignItems="start"
@@ -100,7 +100,7 @@ export default function Education() {
         <Grid
           item
           xs={12}
-          md={1}
+          md={2}
           container
           justifyContent="start"
           alignItems="start"
