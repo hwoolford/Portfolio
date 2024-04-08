@@ -32,6 +32,7 @@ export default function Experience() {
               className="experience-date"
               variant="h1"
               fontSize="1.25rem"
+              fontFamily="Quicksand" 
               >
               2020 – 2023
             </Typography>
@@ -46,6 +47,7 @@ export default function Experience() {
               variant="h1"
               fontSize="1.5rem"
               fontWeight="bold"
+              fontFamily="Quicksand" 
               >
               Professional Development Facilitator
             </Typography>
@@ -54,6 +56,7 @@ export default function Experience() {
               variant="h2"
               fontSize="1rem"
               fontStyle="italic"
+              fontFamily="Quicksand" 
             >
               Spring ISD | Houston, TX
             </Typography>
@@ -61,7 +64,8 @@ export default function Experience() {
               className="experience-details"
               variant="h3"
               fontSize="1rem"
-            >
+              fontFamily="Quicksand"            
+              >
               Designed and provided professional learning experiences for
               district staff. Developed summer conferences for new and returning
               teachers and administrators. <br /> <br />
@@ -74,6 +78,7 @@ export default function Experience() {
               className="experience-date"
               variant="h1"
               fontSize="1.25rem"
+              fontFamily="Quicksand" 
             >
               2016 – 2020 <br /> <br />
             </Typography>
@@ -88,6 +93,7 @@ export default function Experience() {
               variant="h1"
               fontSize="1.5rem"
               fontWeight="bold"
+              fontFamily="Quicksand" 
             >
               Elementary Math Coach
             </Typography>
@@ -96,6 +102,7 @@ export default function Experience() {
               variant="h2"
               fontSize="1rem"
               fontStyle="italic"
+              fontFamily="Quicksand" 
             >
               Spring ISD | Houston, TX
             </Typography>
@@ -103,6 +110,7 @@ export default function Experience() {
               className="experience-details"
               variant="h3"
               fontSize="1rem"
+              fontFamily="Quicksand" 
             >
               Provided coaching and support for math teachers. Served on the
               administration team and helped support teachers and students.
@@ -117,6 +125,7 @@ export default function Experience() {
               className="experience-date"
               variant="h1"
               fontSize="1.25rem"
+              fontFamily="Quicksand" 
             >
               2002 – 2016
             </Typography>
@@ -131,6 +140,7 @@ export default function Experience() {
               variant="h1"
               fontSize="1.5rem"
               fontWeight="bold"
+              fontFamily="Quicksand" 
             >
               Elementary Teacher
             </Typography>
@@ -139,6 +149,7 @@ export default function Experience() {
               variant="h2"
               fontSize="1rem"
               fontStyle="italic"
+              fontFamily="Quicksand" 
             >
               Spring ISD | Houston, TX
             </Typography>
@@ -146,6 +157,7 @@ export default function Experience() {
               className="experience-details"
               variant="h3"
               fontSize="1rem"
+              fontFamily="Quicksand" 
             >
               Expertly designed and delivered engaging instruction and
               professional development to diverse audiences. Named 2005-2006
