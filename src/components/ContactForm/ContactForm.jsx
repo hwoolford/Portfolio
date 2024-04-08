@@ -1,7 +1,7 @@
 import "../ContactForm/ContactForm.css";
 
 import { useState } from "react";
-import { Box, Button, Grid } from "@mui/material/";
+import { Box, Button, Grid, Snackbar } from "@mui/material/";
 import SendIcon from "@mui/icons-material/Send";
 import { validateEmail } from "../../utils/validateEmail";
 
@@ -10,6 +10,8 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState("");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -41,7 +43,11 @@ export default function ContactForm() {
       method: "POST",
       body: new FormData(form),
     })
-      .then(() => console.log("Form successfully submitted"))
+      .then(() => {
+        console.log("Form successfully submitted");
+        setOpenSnackbar(true);
+        setSnackbarMessage("Form submitted successfully!");
+      })
       .catch((error) => console.error(error));
 
     // Clear form fields and errors
@@ -144,6 +150,12 @@ export default function ContactForm() {
           </form>
         </Box>
       </div>
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={() => setOpenSnackbar(false)}
+        message={snackbarMessage}
+      />
     </>
   );
 }
