@@ -44,9 +44,8 @@ export default function ContactForm() {
       body: new FormData(form),
     })
       .then(() => {
-        console.log("Form successfully submitted");
         setOpenSnackbar(true);
-        setSnackbarMessage("Form submitted successfully!");
+        setSnackbarMessage("Message sent successfully");
       })
       .catch((error) => console.error(error));
 
@@ -155,6 +154,7 @@ export default function ContactForm() {
         autoHideDuration={6000}
         onClose={() => setOpenSnackbar(false)}
         message={snackbarMessage}
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
       />
     </>
   );
