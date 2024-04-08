@@ -13,8 +13,7 @@ export default function Education() {
           justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
-          fontWeight="bold"
-          fontSize="1.25rem"        >
+          fontWeight="bold"       >
           Full Stack Web Development Certificate
         </Grid>
         <Grid
@@ -24,8 +23,7 @@ export default function Education() {
           container
           justifyContent="start"
           alignItems="start"
-          fontFamily="Quicksand"
-          fontSize="1.25rem"  
+          fontFamily="Quicksand" 
         >
           University of New Hampshire, Portsmouth, NH
         </Grid>
@@ -37,7 +35,6 @@ export default function Education() {
           justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
-          fontSize="1.25rem"  
         >
           March 2024
         </Grid>
@@ -52,7 +49,6 @@ export default function Education() {
           alignItems="start"
           fontFamily="Quicksand"
           fontWeight="bold"
-          fontSize="1.25rem"  
         >
           M. Ed. Teacher Leadership
         </Grid>
@@ -64,7 +60,6 @@ export default function Education() {
           justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
-          fontSize="1.25rem"  
         >
           Lamar University, Beaumont, TX
         </Grid>
@@ -76,7 +71,6 @@ export default function Education() {
           justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
-          fontSize="1.25rem"  
         >
           2007 – 2009
         </Grid>
@@ -90,8 +84,7 @@ export default function Education() {
           justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
-          fontWeight="bold"
-          fontSize="1.25rem"  
+          fontWeight="bold"  
         >
           B.S. Interdisciplinary Studies
         </Grid>
@@ -103,7 +96,6 @@ export default function Education() {
           justifyContent="start"
           alignItems="start"
           fontFamily="Quicksand"
-          fontSize="1.25rem"  
         >
           Lamar University, Beaumont, TX
         </Grid>
@@ -114,8 +106,7 @@ export default function Education() {
           container
           justifyContent="start"
           alignItems="start"
-          fontFamily="Quicksand"
-          fontSize="1.25rem"  
+          fontFamily="Quicksand" 
         >
           1992 – 1996
         </Grid>
