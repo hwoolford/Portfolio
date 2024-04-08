@@ -1,4 +1,5 @@
 import "../NavBar/NavBar.css";
+import Resume from "../../pages/Resume/Resume";
 import * as React from "react";
 import { Link, NavLink } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
@@ -16,10 +17,10 @@ const pages = [
   { title: "About Me", path: "/about" },
   { title: "Projects", path: "/projects" },
   { title: "Contact", path: "/contact" },
-  { title: "Resume", path: "/resume" },
+  // { title: "Resume", path: "/resume" },
 ];
 
-export default function NavBar3() {
+export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -126,16 +127,17 @@ export default function NavBar3() {
           </Typography>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-                  <Button key={page.title}>
-                  <NavLink
-                    className="nav-link"
-                    to={page.path}
-                    onClick={handleCloseNavMenu}
-                  >
-                    {page.title}
-                  </NavLink>
-                </Button>
+              <Button key={page.title}>
+                <NavLink
+                  className="nav-link"
+                  to={page.path}
+                  onClick={handleCloseNavMenu}
+                >
+                  {page.title}
+                </NavLink>
+              </Button>
             ))}
+            <Resume />
           </Box>
         </Toolbar>
       </Container>
