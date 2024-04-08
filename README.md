@@ -13,7 +13,7 @@ This is a professional portfolio app that was built using React and Vite.
 ## Usage
 You must have node.js installed on your machine. Run "npm i" to install dependencies. This app's dependencies are bootstrap, react, react-dom, and react-router-dom. 
 
-![Screenshot of app](./assets/screenshot.png)
+![Screenshot of app]()
 
 ## Instructions
 1. Clone the repository to your machine
