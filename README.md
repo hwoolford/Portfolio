@@ -11,9 +11,11 @@ This is a professional portfolio app that was built using React and Vite.
 5. [Author](#author)
 
 ## Usage
-You must have node.js installed on your machine. Run "npm i" to install dependencies. This app's dependencies are bootstrap, react, react-dom, and react-router-dom. 
+You must have node.js installed on your machine. Run "npm i" to install dependencies. Some of the app's dependencies are MaterialUI, react, react-dom, and react-router-dom. 
 
-![Screenshot of app]()
+Screenshot of App:
+
+![Screenshot of app](./assets/Projects.png)
 
 ## Instructions
 1. Clone the repository to your machine
@@ -31,5 +33,5 @@ You must have node.js installed on your machine. Run "npm i" to install dependen
 - I would like to acknowledge the assistance provided by Xpert, an AI Learning Assistant, in providing guidance and support throughout the development of this project. Xpert's insights and suggestions were invaluable in helping me overcome challenges and improve the quality of my work. (Acknowledgement written by Xpert)
 
 ## Author
-My name is Heather Woolford and I created this portfolio while learning full stack web development at the University of New Hampshire.
+My name is Heather Woolford and I created this portfolio as a full stack web development student at the University of New Hampshire. I redesigned it after completing the program.
 [Find Me on GitHub](https://gist.github.com/hwoolford)
