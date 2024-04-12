@@ -8,6 +8,7 @@ import {
   Grid,
   styled,
   Typography,
+  Tooltip,
 } from "@mui/material";
 import Color from "color";
 import "../Projects/Projects.css";
@@ -109,13 +110,45 @@ const CustomCard = ({ color, image, title, subtitle, deploy, repo }) => (
   </CardActionAreaActionArea>
 );
 
+const CustomCardSlow = ({ color, image, title, subtitle, deploy, repo }) => (
+  <CardActionAreaActionArea>
+    <StyledCard color={color}>
+        <CardMedia
+          image={image}
+          sx={{
+            width: "100%",
+            height: 0,
+            paddingBottom: "50%",
+            backgroundColor: "rgba(0,0,0,0.08)",
+          }}
+        />
+      <CardContentContent color={color}>
+        <TypographyTitle variant={"h2"}>{title}</TypographyTitle>
+        <TypographySubtitle>{subtitle}</TypographySubtitle>
+      </CardContentContent>
+    </StyledCard>
+    <CardActions>
+        <div className="btn-container">
+        <Tooltip title="Site may take a while to load." placement="top">
+    <ButtonLink className="buttons" href={deploy} target="_blank" rel="noreferrer" color={color}>
+        View Site
+      </ButtonLink>
+      </Tooltip>
+      <ButtonLink className="buttons" href={repo} target="_blank" rel="noreferrer" color={color}>
+        View Repo
+      </ButtonLink>
+      </div>
+    </CardActions>
+  </CardActionAreaActionArea>
+);
+
 export default function Projects() {
   return (
     <div className="main-container">
       <h1 className="page-title">Projects</h1>
       <Grid className="grid-container" container spacing={4}>
         <Grid item className="project-container">
-          <CustomCard
+          <CustomCardSlow
             color={"#c75a46"}
             title={"Corporate Project Management System"}
             subtitle={
@@ -127,7 +160,7 @@ export default function Projects() {
           />
         </Grid>
         <Grid item className="project-container">
-          <CustomCard
+          <CustomCardSlow
             color={"#5e877f"}
             title={"Wet My Plants"}
             subtitle={
@@ -192,6 +225,15 @@ export default function Projects() {
 }
 
 CustomCard.propTypes = {
+  color: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  deploy: PropTypes.string.isRequired,
+  repo: PropTypes.string.isRequired,
+};
+
+CustomCardSlow.propTypes = {
   color: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
