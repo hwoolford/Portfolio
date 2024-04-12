@@ -5,7 +5,9 @@ import { Grid } from "@mui/material/";
 export default function AboutSummary() {
   return (
     <>
+    <h1 className="about-section-title">About Me</h1>
       <div className="AboutContainer">
+      
         <Grid container spacing={1} justifyContent="center">
           <Grid
             item
@@ -25,7 +27,7 @@ export default function AboutSummary() {
             justifyContent="center"
             alignItems="center"
           >
-            <h1 className="about-section-title">About Me</h1>
+            
             <p className="about">
               As a former educator transitioning into the realm of full-stack
               web development, I bring a unique blend of skills and experiences

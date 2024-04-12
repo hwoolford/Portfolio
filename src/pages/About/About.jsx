@@ -7,7 +7,7 @@ import Education from "../../components/AboutMe/Education";
 export default function About() {
   return (
     <>
-      <Grid container spacing={4} justifyContent="center" sx={{ padding: '3rem 4rem'}}>
+      <Grid container spacing={4} justifyContent="space-between" sx={{ padding: '3rem 4rem'}}>
         <Grid
           item
           xs={12}
@@ -19,7 +19,7 @@ export default function About() {
         <Grid
           item
           xs={12}
-          md={4}
+          md={3}
           sx={{ paddingBottom: '2rem' }}
         >
           <Technologies style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} />
